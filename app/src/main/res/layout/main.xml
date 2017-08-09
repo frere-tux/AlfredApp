@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:id="@+id/loading"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:visibility="visible"
+		android:background="#1C1C1C">
+
+		<ImageView
+			android:id="@+id/loadingImage"
+			android:layout_width="fill_parent"
+			android:src="@drawable/loading"
+			android:alpha="1.0"
+			android:layout_height="450dp"
+			android:layout_weight="1"/>
+
+		<TextView
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="match_parent"
+			android:text="Loading"
+			android:id="@+id/loadingText"
+			android:textColor="#759C00"
+			android:gravity="center"
+			android:layout_height="0dp"
+			android:layout_weight="1"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:text="Reload"
+			android:id="@+id/loadingButton"
+			android:textColor="#759C00"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:layout_margin="15dp"
+			android:visibility="gone"/>
+
+	</LinearLayout>
+
+	<WebView
+		android:id="@+id/webview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone"/>
+
+</FrameLayout>
+
